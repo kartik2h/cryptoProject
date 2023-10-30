@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <title>Crypto Dashboard</title>
+</head>
+<body>
+
+	<div class="header">
+        <div class="header-left">
+            <span>Cryptos: 1.8M+</span>
+            <span>Exchanges: 667</span>
+            <span>Market Cap: $1.26T ▲0.76%</span>
+            <span>24h Vol: $24.73B ▼34.86%</span>
+            <span>Dominance: BTC: 53.0% ETH: 17.0%</span>
+            <span>ETH Gas: 12 Gwei ▼</span>
+        </div>
+        <div class="header-right">
+            <select>
+                <option>English</option>
+                <!-- Add more languages here -->
+            </select>
+            <select>
+                <option>USD</option>
+                <!-- Add more currencies here -->
+            </select>
+            <button class="header-button">Get listed</button>
+            <button class="header-button">API</button>
+            <button class="header-button">Log In</button>
+            <button class="header-button">Sign up</button>
+        </div>
+    </div>
+
+	<div class="navbar-homepage">
+		<a href="#"><img src="path_to_logo" alt="CoinMarketCap Logo"></a>
+		<a href="#">Cryptocurrencies</a>
+		<a href="#">Exchanges</a>
+		<a href="#">Community</a>
+		<a href="#">Products</a>
+		<a href="#">Learn</a>
+		<a href="#">Watchlist</a>
+		<a href="#">Portfolio</a>
+		<a href="#"><input type="text" placeholder="Search"></a>
+	</div>
+
+
+    <div class="crypto-title">
+		Today's Cryptocurrency Prices by Market Cap
+	</div>
+
+	<div class="buttons-group">
+		<button class="btn">Cryptocurrencies</button>
+		<button class="btn">Categories</button>
+		<button class="btn">Bitcoin Ecosystem</button>
+		<button class="btn">Telegram Bot</button>
+		<button class="btn">FTX Bankruptcy Estate</button>
+		<button class="btn">Real World Assets</button>
+		<button class="btn">Show rows</button>
+		<button class="btn">Filters</button>
+		<button class="btn">Customize</button>
+	</div>
+
+	<table>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Name</th>
+				<th>Price</th>
+				<th>1h %</th>
+				<th>24h %</th>
+				<th>7d %</th>
+				<th>Market Cap</th>
+				<th>Volume(24h)</th>
+				<th>Circulating Supply</th>
+				<th>Last 7 Days</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Bitcoin BTC</td>
+				<td>$34,091.52</td>
+				<td class="negative">-0.24%</td>
+				<td class="positive">0.77%</td>
+				<td class="positive">13.83%</td>
+				<td>$665,698,571,594</td>
+				<td>$10,256,092,171</td>
+				<td>19,526,806 BTC</td>
+				<td>Chart Here</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Ethereum ETH</td>
+				<td>$1,774.88</td>
+				<td class="negative">-0.42%</td>
+				<td class="negative">-0.20%</td>
+				<td class="positive">9.06%</td>
+				<td>$213,460,563,580</td>
+				<td>$4,275,718,641</td>
+				<td>120,267,913 ETH</td>
+				<td>Chart Here</td>
+			</tr>
+			<!-- ... You can add more rows with similar structure ... -->
+		</tbody>
+	</table>
+
+
+</body>
+</html>
